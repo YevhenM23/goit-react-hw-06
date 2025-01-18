@@ -7,7 +7,7 @@ import { addContact } from "../../redux/contactsSlice";
 
 const ContactForm = () => {
   const dispatch = useDispatch();
-  //   const initialValues = { contact: "" };
+
   const onSubmit = (values, options) => {
     const newContact = {
       id: nanoid(),
@@ -25,11 +25,6 @@ const ContactForm = () => {
   return (
     <Formik
       validationSchema={orderSchema}
-      //   initialValues={{ name: "", number: "" }}
-      //   onSubmit={(values, { resetForm }) => {
-      //     addNewCard(values);
-      //     resetForm();
-      //   }}
       initialValues={{ name: "", number: "" }}
       onSubmit={onSubmit}
     >

@@ -22,7 +22,6 @@ const persistConfig = {
 const persistedReducer = persistReducer(persistConfig, contactsReducer);
 
 export const store = configureStore({
-  // contacts: contactsReducer,
   reducer: {
     contacts: persistedReducer,
     filter: filterSlice,

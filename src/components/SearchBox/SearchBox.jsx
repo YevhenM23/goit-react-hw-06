@@ -6,10 +6,6 @@ import { changeFilter } from "../../redux/filtersSlice";
 const SearchBox = () => {
   const dispatch = useDispatch();
 
-  //   const handleSearch = (values) => {
-  //     onFilterChange(values.search);
-  //   };
-
   return (
     <Formik>
       {() => (
